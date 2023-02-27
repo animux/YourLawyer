@@ -1,0 +1,64 @@
+.lawyercard {
+  display: flex;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 15px;
+  align-items: center;
+  margin: 20px 100px
+}
+
+.lawyercard .details {
+  margin-left: auto;
+}
+
+.lawyercard img {
+  width: 150px;
+}
+
+.lawyercard .info {
+  flex-basis: 60%;
+}
+
+.lawyercard .info .name {
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.lawyercard .info .occupation {
+  padding-bottom: 5px;
+}
+
+.lawyercard .info .about {
+  padding-bottom: 10px
+}
+
+.lawyercard .info .occupation {
+  font-size: 1rem;
+  color: #757575;
+  margin-bottom: auto;
+}
+
+.lawyercard .info .location span {
+  margin-right: 5px;
+  color: var(--primary)
+}
+
+.lawyercard .details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  width: 25%;
+}
+
+.lawyercard .details .availability {
+  margin-bottom: auto;
+}
+
+.lawyercard .icon {
+  color: var(--primary);
+  margin-right: 14px;
+}

@@ -1,0 +1,81 @@
+
+.about-us .title {
+    font-weight: bolder;
+    color:  white;
+  }
+  
+  .about-us .title h1 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .about-us .title h1:before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: white;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .about-us .title h1:after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: white;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .about-us {
+    background: #0eb3a6;
+    padding: 20px 0;
+    margin-bottom: 50px;
+  }
+  
+  .aboutus-text {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: white;
+  }
+
+@media screen and (max-width: 680px) {
+    .about-us .title h1 {
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+        text-align: center;
+      }
+      
+      .about-us .title h1:before {
+        content: "";
+        display: inherit;
+        width: 0;
+        height: 0;
+        background: white;
+        left: 0;
+        top: 0;
+        position: inherit;
+      }
+      
+      .about-us .title h1:after {
+        content: "";
+        display: inherit;
+        width: 0;
+        height: 0;
+        background: white;
+        right: 0;
+        top: 0;
+        position: inherit;
+      }
+}

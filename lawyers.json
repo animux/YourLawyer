@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Monerul Islam",
+    "about": "To be a successful profesional in esteem organization that offers me oppurtunities & challenges to gear up my career through the accomplishment of the business goals & economic welfare",
+    "date_of_birth": "03th April, 1995",
+    "nationality": "Bangladeshi",
+    "education": [
+      {
+        "degree": "Master of Social Science",
+        "institute": "University of Dhaka",
+        "subject": "MSS in Victimology and Restorative Justice (VRJ)"
+      },
+      {
+        "degree": "Master of Law",
+        "institute": "Bangladesh University",
+        "subject": "LL.M",
+        "passing_year": 2017
+      },
+      {
+        "degree": "Bachelors of Laws",
+        "institute":"Bangladesh University",
+        "subject": "LL.B (Hon's)",
+        "passing_year": 2016
+      }
+    ],
+    "experience": [
+      {
+        "post": "Lecturer",
+        "workplace": "Khilgong Law College",
+        "period": "1st January, 2018 - 28th February, 2020"
+      },
+      {
+        "post": "Law Officer (Contractual)",
+        "workplace": "Teletalk Bangladesh Ltd",
+        "period": "1st November, 2016 - 31 December, 2017"
+      }
+    ],
+    "languages": ["Bengali", "English"]
+  }
+]

@@ -1,0 +1,29 @@
+.filterForm {
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(201, 255, 248, 0.6)), url('../../assets/background.png') !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  color: white;
+  padding: 80px 0;
+}
+
+.filterForm .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.filterForm label {
+  font-size: 18px;
+  color: white;
+}
+
+.filterForm .formFilter {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 200px;
+}

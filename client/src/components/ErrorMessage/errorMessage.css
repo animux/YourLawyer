@@ -1,0 +1,13 @@
+.errorMessage {
+  background-color: darkred;
+  color: white;
+}
+
+.successMessage {
+  background-color: #90EE90;
+  color: rgb(2, 121, 18);
+}
+
+.errorMessage p {
+  padding: 20px;
+}

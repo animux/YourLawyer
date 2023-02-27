@@ -1,0 +1,46 @@
+.sign-in {
+  margin: 50px 0;
+}
+
+.loginForm {
+  width: 30%;
+  padding-top: 30px;
+  padding: 30px 20px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.loginForm h5 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.loginForm a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.loginForm a:hover {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.sign-in .bottom-form-link {
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.sign-in .bottom-form-link ul {
+  display: block;
+  margin-top: 30px;
+}
+
+.sign-in .bottom-form-link li {
+  display: inline-block;
+}
+
+.sign-in .bottom-form-link li:not(:first-child)::before {
+  content: '\2022';
+  margin: 0 8px 0px 4px;
+}

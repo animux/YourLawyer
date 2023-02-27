@@ -1,0 +1,43 @@
+.pricing {
+    padding: 40px 0;
+  }
+  
+  .pricing h3 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .price-card {
+    padding: 50px 25px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: white;
+  }
+  
+  .price-card .price-title {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .price-card p {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .price-card .price {
+    font-size: 3.2rem;
+    padding-bottom: 20px;
+  }
+  
+  .price-card .currency {
+    font-size: 2rem;
+  }
+  
+  .price-card.light {
+    background-color: rgb(36, 231, 205);
+    color: white;
+  }
+  
