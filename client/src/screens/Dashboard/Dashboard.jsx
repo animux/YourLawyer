@@ -11,7 +11,7 @@ export default class Dashboard extends Component {
   }
 
   componentDidMount() {
-    axios.get('/api/private', {
+    axios.get('http://api.askyourlawyer.io/api/private', {
       headers: {
         'Content-Type': 'application/json',
         'authorization': `Bearer ${localStorage.getItem('token')}`

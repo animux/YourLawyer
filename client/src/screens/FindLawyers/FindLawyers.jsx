@@ -58,7 +58,7 @@ export default class FindLawyers extends Component {
   }
 
   async fetchLawyers() {
-    let { data } = await axios.get('/api/lawyers');
+    let { data } = await axios.get('http://api.askyourlawyer.io/api/lawyers');
     this.setState({ lawyers: data });
     // console.log(data)
     console.log(this.state.lawyers[0])
