@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 
 import { faLocationDot, faMoneyBill, faClipboard } from '@fortawesome/free-solid-svg-icons'
 
@@ -21,7 +22,7 @@ export default class LawyerCard extends Component {
         <div className="details">
           <div className="appointmentFee"><FontAwesomeIcon className="icon" icon={faMoneyBill} size={'lg'}></FontAwesomeIcon>{this.props.lawyer_data.appointmentFee}</div>
           <div className="availability"><FontAwesomeIcon className="icon" icon={faClipboard} size={'lg'}></FontAwesomeIcon> Available</div>
-          <button className="button">View Profile</button>
+          <Link to={`/lawyers/${this.props.lawyer_data._id}`} className="button">View Profile</Link>
         </div>
       </div>
     )

@@ -18,7 +18,7 @@ exports.payment = async (request, response, next) => {
 
   console.log(user);
 
-  const post_data = {
+  const service_post_data = {
     total_amount: totalAmount,
     currency: 'BDT',
     tran_id: uuidv4(),
@@ -53,9 +53,9 @@ exports.payment = async (request, response, next) => {
 
   const sslcommer = new SSLCommerzPayment(process.env.STORE_ID, process.env.STORE_PASSWORD, false)
 
-  sslcommer.init(post_data).then(async data => {
+  sslcommer.init(service_post_data).then(async data => {
     if (data.GatewayPageURL) {
-      response.status(200).setHeader('Access-Control-Allow-Origin', '*').setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept").json({ url: data.GatewayPageURL})
+      response.status(200).setHeader('Access-Control-Allow-Origin', '*').setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept").json({ success: true, url: data.GatewayPageURL})
       console.log(response.getHeaders())
     } else {
       return response.status(400).json({ message: 'SSL session was not successful' })
@@ -75,6 +75,14 @@ exports.paymentSuccess = async (request, response, next) => {
   user.tran_id = tran_id;
   user.tran_date = tran_date;
   user.val_id = val_id;
+
+  let expireDate = new Date();
+
+  if (amount === 149) expireDate = expireDate + (24 * 60 * 60 * 1000);
+  else if (amount === 649) expireDate = expireDate + (7 * 24 * 60 * 60 * 1000)
+  else if (amount === 2499) expireDate = expireDate + (30 * 24 * 60 * 60 * 1000)
+  
+  user.service_expire = expireDate
 
   await user.save();
 

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const LawyerSchema = new mongoose.Schema({
   name: { type: String, required: [true, 'Please provide the lawyer name'] },
   about: { type: String, required: [true, 'Please provide lawyer info'] },
+  email: { type: String, required: [true, 'Please provide lawyer email'] },
   lawyer_type: { type: String, required: [true, 'Please provide lawyer type'] },
   appointmentFee: { type: Number, required: [true, 'Please provide the appointment fee']},
   data_of_birth: { type: String, required: [true, 'Please provide lawyer date of birth'] },

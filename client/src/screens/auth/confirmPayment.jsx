@@ -11,7 +11,7 @@ export default class ConfirmPayment extends Component {
   async getNewToken() {
     const token = localStorage.getItem('token');
     
-    let { data } = await axios.post('http://api.askyourlawyer.io/api/auth/get-token', { token }, {  
+    let { data } = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth/get-token`, { token }, {  
       headers: {
         'Content-Type': 'application/json'
       }

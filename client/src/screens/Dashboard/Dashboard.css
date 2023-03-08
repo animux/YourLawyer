@@ -1,0 +1,14 @@
+.dashboard .heading {
+  font-size: 2rem;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.dashboard .supportDays, .dashboard .lawyer-name, .dashboard .amount {
+  font-size: 1.3rem;
+}
+
+.dashboard .name h5, .dashboard .email h5, .dashboard .phoneNumber h5 {
+  font-size: 1.5rem;
+}

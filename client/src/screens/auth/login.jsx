@@ -29,7 +29,7 @@ export default class Login extends Component {
         }
       }
 
-      let { data } = await axios.post('http://api.askyourlawyer.io/api/auth/login', { email: this.state.email, password: this.state.password }, config);
+      let { data } = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth/login`, { email: this.state.email, password: this.state.password }, config);
       console.log(data);
 
       if (data.success) {

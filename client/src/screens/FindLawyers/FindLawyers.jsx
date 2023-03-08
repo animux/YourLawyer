@@ -58,10 +58,8 @@ export default class FindLawyers extends Component {
   }
 
   async fetchLawyers() {
-    let { data } = await axios.get('http://api.askyourlawyer.io/api/lawyers');
+    let { data } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/lawyers`);
     this.setState({ lawyers: data });
-    // console.log(data)
-    console.log(this.state.lawyers[0])
   }
 
   componentDidMount() {

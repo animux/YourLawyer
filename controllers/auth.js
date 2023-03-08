@@ -29,6 +29,18 @@ exports.login = async (request, response, next) => {
   try {
     const user = await User.findOne({ email }).select('+password');
 
+    let date = new Date().getTime();
+
+    if (user.service_expire < date) {
+      user.amount = 0;
+      user.tran_date = null;
+      user.tran_id = null;
+      user.val_id = null;
+      user.service_expire = 0;
+
+      await user.save();
+    }
+
     if (!user) return next(new ErrorResponse('Incorrect email or password', 401))
 
     const isMatch = await user.matchPassword(password);
@@ -54,7 +66,7 @@ exports.forgotPassword = async (request, response, next) => {
     console.log(`${email} - ${resetToken}`)
     await user.save();
 
-    const resetUrl = `http://localhost:3000/reset-password/${resetToken}`;
+    const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
 
     const message = `
       <h1>You have requested a password reset</h1>

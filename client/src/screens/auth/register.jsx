@@ -37,7 +37,7 @@ export default withRouter(class Register extends Component {
         }
       }
   
-      let { data } = await axios.post('http://api.askyourlawyer.io/api/auth/register', {
+      let { data } = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth/register`, {
         name: this.state.name,
         phoneNumber: this.state.number,
         email: this.state.email,

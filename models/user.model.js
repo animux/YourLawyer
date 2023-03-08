@@ -13,7 +13,13 @@ const UserSchema = new mongoose.Schema({
   resetPasswordExpire: Date,
   tran_id: String,
   tran_date: String,
-  val_id: String
+  val_id: String,
+  service_expire: Number,
+  lawyerName: String,
+  bookingAmountPaid: Number,
+  booking_tran_id: String,
+  booking_tran_date: String,
+  booking_val_id: String
 }, { collection: 'user-data' });
 
 UserSchema.pre('save', async function(next) {

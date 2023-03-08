@@ -1,0 +1,132 @@
+.lawyerProfileCard {
+  width: 75%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 15px;
+  transition: 0.3s;
+  padding: 30px;
+}
+
+.lawyerInfo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info .name {
+  font-size: 2rem;
+}
+
+.lawyerInfo .appointment {
+  margin-left: auto;
+}
+
+.lawyerInfo img {
+  width: 150px
+}
+
+.lawyerInfo .info .occupation {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 5px 0;
+  font-size: 1.1em;
+}
+
+.lawyerInfo .appointment .appointmentFee {
+  padding: 10px 0;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.overview {
+  padding: 20px 0;
+}
+
+.overview h1 {
+  padding-bottom: 20px;
+}
+
+.experience {
+  padding: 20px 0;
+}
+
+.experience-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+}
+
+.experience-list::before {
+  background: #ddd !important;
+  bottom: 0 !important;
+  content: "" !important;
+  left: 8px !important;
+  position: absolute !important;
+  top: 8px !important;
+  width: 2px !important;
+}
+
+.experience-list li {
+  position: relative;
+}
+
+.experience-list  > li .experience-user {
+  background: #fff;
+  height: 10px;
+  left: 4px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+}
+
+.before-circle {
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  border: 2px solid var(--primary);
+}
+
+.experience-list > li .experience-content {
+  background-color: #fff;
+  margin: 0 0 20px 40px;
+  padding: 0;
+  position: relative;
+}
+
+.experience-list > li .experience-content .timeline-content {
+  color: #272b41;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.timeline-content .post {
+  font-size: 1.112rem;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.timeline-content .workplace {
+  color:rgba(0, 0, 0, 0.7);
+  font-size: 1.09rem;
+  padding-bottom: 10px;
+}
+
+.timeline-content .details {
+  padding-left: 10px;
+  font-size: 13px
+}
+
+.education {
+  padding: 20px 0;
+}
+
+.language {
+  padding: 20px 0;
+}
+
+.language span {
+  padding-right: 10px;
+}

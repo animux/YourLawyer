@@ -15,10 +15,15 @@ import PP from './screens/PPolicy/PP.jsx';
 import AboutUs from './screens/About Us/AboutUs';
 import ContactUs from './screens/ContactUs/ContactUs';
 import Pricing from './screens/Pricing/Pricing';
+
 import FindLawyers from './screens/FindLawyers/FindLawyers';
+import LawyerProfile from './screens/FindLawyers/LawyerProfile';
+import BookAppointment from './screens/FindLawyers/BookAppointment';
 
 import Login from './screens/auth/login';
 import Register from './screens/auth/register';
+import ForgotPassword from './screens/auth/forgotPassword';
+import ResetPassword from './screens/auth/resetPassword';
 
 import Checkout from './screens/checkout/checkout.jsx'
 import ConfirmPayment from './screens/auth/confirmPayment';
@@ -71,10 +76,15 @@ export default class App extends Component {
 
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/register' element={<Register />} />
+          <Route exact path='/forgot-password' element={<ForgotPassword />} />
+          <Route exact path='/reset-password/:resetToken' element={<ResetPassword />} />
+
           <Route exact path='/checkout/:service' element={<Checkout />}></Route>
           <Route exact path='/confirm-payment' element={Protected(ConfirmPayment)}></Route>
 
           <Route exact path='/findlawyers' element={<FindLawyers />}></Route>
+          <Route exact path='/lawyers/:id' element={<LawyerProfile />}></Route>
+          <Route exact path='/lawyers/appointment/:id' element={<BookAppointment />}></Route>
 
           <Route exact path='/dashboard' element={Protected(Dashboard)}></Route>
 

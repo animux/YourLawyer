@@ -1,0 +1,18 @@
+.book {
+  padding: 40px 0;
+}
+
+.book .heading {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.book .serviceEnabled {
+  font-size: 1.5rem;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+.book .serviceEnabled.totalBill {
+  border-bottom: none;
+}

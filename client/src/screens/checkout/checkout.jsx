@@ -29,12 +29,10 @@ export default withRouter(class Checkout extends Component {
 
     if (this.state.service === '' || this.state.totalAmount === 0) window.location.href = '/pricing';
 
-    let { data } = await axios.post('http://api.askyourlawyer.io/api/payment', { totalAmount: this.state.totalAmount, token: localStorage.getItem('token') });
+    let { data } = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/payment`, { totalAmount: this.state.totalAmount, token: localStorage.getItem('token') });
 
-    console.log(data.url)
-    window.location.href = data.url
-
-    if (data.success) console.log('success');
+    if (data.success) window.location.href = data.url
+    else return;
   }
 
   render() {

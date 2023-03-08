@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --primary: rgba(14,179,166,255);
+  --primary: rgba(14, 179, 166, 1);
   --primary-light: rgb(201, 255, 248);
   --swiper-theme-color: rgb(0, 0, 0) !important;
 }
@@ -31,6 +31,7 @@ button {
   color: black;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
 }
 
 .button:hover {

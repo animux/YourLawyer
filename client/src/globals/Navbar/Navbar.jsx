@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import './Navbar.css';
 import Logo from '../../assets/logo.png'
 
@@ -17,7 +19,7 @@ function auth(state) {
         return (
             <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
                 <li className='nav-item signin'>
-                    <a href="#" onClick={() => {
+                    <a href="/" onClick={() => {
                         localStorage.removeItem('token');
                         window.location.href = '/'
                     }} className='nav-link'>Logout</a>
@@ -33,7 +35,7 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg">
             <div className="container">
                 <a href="/" className="navbar-brand">
-                    <img src={Logo} alt="" width="50px" />
+                    <img src={Logo} alt="logo" width="50px" />
                 </a>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,16 +45,16 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" href="/about-us">About Us</a>
+                            <Link className="nav-link" to="/about-us">About Us</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">Solutions</a>
+                            <Link className="nav-link" to="/">Solutions</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/packages">Pricing</a>
+                            <Link className="nav-link" to="/packages">Pricing</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/findlawyers">Find Lawyers</a>
+                            <Link className="nav-link" to="/findlawyers">Find Lawyers</Link>
                         </li>
                     </ul>
 
